@@ -1,0 +1,39 @@
+// Toto je convertor pro ziskaí raw dat souřadnic radaru z https://overpass-turbo.eu , tato stranka poskytne data o ktere si zažádáme ale ne v fermatu který by se nám hodil takze pozuijeme tento convertor dar
+// Tento skript ručně nahraď daty z geojsonu a převeď je na radary.h
+#include <iostream>
+#include <fstream>
+#include <string>
+
+int main() {
+    std::ifstream geojson("radary.geojson");
+    std::ofstream output("include/radary.h");
+
+    if (!geojson.is_open() || !output.is_open()) {
+        std::cerr << "Nelze otevrit soubory.\n";
+        return 1;
+    }
+
+    output << "#pragma once\n\n";
+    output << "struct Radar {\n";
+    output << "  double lat;\n";
+    output << "  double lng;\n";
+    output << "  const char* jmeno;\n";
+    output << "  int maxSpeed;\n";
+    output << "};\n\n";
+    output << "const Radar radary[] = {\n";
+
+    std::string line;
+    while (std::getline(geojson, line)) {
+        // semikomentovaná ukázka: NEJEDNÁ se o plnohodnotný parser
+        // přepiš ručně do C++ stylu
+        if (line.find("coordinates") != std::string::npos) {
+            // vytáhni souřadnice...
+        }
+    }
+
+    output << "};\n";
+    output << "const int POCET_RADARU = sizeof(radary) / sizeof(radary[0]);\n";
+
+    std::cout << "✅ Hotovo: radary.h vygenerován\n";
+    return 0;
+}
