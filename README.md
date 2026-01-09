@@ -126,6 +126,9 @@ Databáze pevných radarů je vytvořena z **otevřených dat OpenStreetMap**.
 - aktualizace databáze probíhá **manuálně**
 - systém nezaručuje úplnou spolehlivost detekce
 
+  Citace:
+  Tento projekt byl vytvořrn s pomocí ChatGPT a Grok , nevycházel jsem z žádneho jiného projektu.
+
 ---
 
 ## 🧠 Princip funkce
