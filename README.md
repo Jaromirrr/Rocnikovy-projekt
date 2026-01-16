@@ -77,7 +77,7 @@ Externí anténa:
 Propojení mezi ESP32 a ostatními komponentami je realizováno:
 - **pájenými spoji** (finální řešení), nebo  
 - pomocí **female-to-female Dupont kabelů** (vývojové zapojení)
-![ESP32-Pinout](Docs/image.jpg)
+![ESP32-Pinout](Docs/image.png)
 ---
 
 ## 💻 Vývojové prostředí
