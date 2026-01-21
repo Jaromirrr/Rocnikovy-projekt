@@ -33,7 +33,7 @@ V databázi OpenStreetMap jsou geografické objekty ukládány jako:
 - **way** – liniový nebo plošný objekt
 - **relation** – logická vazba mezi objekty
 
-Rychlostní kamery jsou nejčastěji reprezentovány jako **node** s tagem:
-[CameraData](CameraData.yaml)
+Rychlostní kamery můžu zobrazit pomocí kódu : 
+[Kód pro zobrazení kamer](CameraData.yaml)
 
 
