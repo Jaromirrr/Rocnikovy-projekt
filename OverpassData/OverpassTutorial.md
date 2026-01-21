@@ -34,5 +34,6 @@ V databázi OpenStreetMap jsou geografické objekty ukládány jako:
 - **relation** – logická vazba mezi objekty
 
 Rychlostní kamery jsou nejčastěji reprezentovány jako **node** s tagem:
+[CameraData](CameraData.yaml)
 
 
